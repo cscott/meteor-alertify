@@ -1,0 +1,4 @@
+[submodule "vendor"]
+	path = vendor
+	url = https://github.com/fabien-d/alertify.js.git
+	branch = 0.3
