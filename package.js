@@ -5,8 +5,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.versionsFrom("METEOR@0.9.0");
-  api.use('jquery', 'client');
+  api.versionsFrom && api.versionsFrom("METEOR@0.9.0");
 
   api.add_files('vendor/lib/alertify.js', 'client');
   api.add_files('vendor/themes/alertify.core.css', 'client');
