@@ -1,8 +1,11 @@
 Package.describe({
-  summary: "JavaScript Alert/Notification System for Meteor. http://fabien-d.github.com/alertify.js/"
+  summary: "JavaScript Alert/Notification System for Meteor. http://fabien-d.github.com/alertify.js/",
+  version: "0.3.11",
+  git: "https://github.com/ovcharik/meteor-alertify"
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom("METEOR@0.9.0");
   api.use('jquery', 'client');
 
   api.add_files('vendor/lib/alertify.js', 'client');

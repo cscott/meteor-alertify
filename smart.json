@@ -1,9 +1,0 @@
-{
-  "name": "alertify",
-  "description": "Alertify for Meteor.",
-  "homepage": "https://github.com/ovcharik/meteor-alertify",
-  "author": "Maksim Ovcharik <maksim.ovcharik@gmail.com>",
-  "version": "0.3.11",
-  "git": "https://github.com/ovcharik/meteor-alertify",
-  "packages": {}
-}
