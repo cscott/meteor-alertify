@@ -5,14 +5,17 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.versionsFrom && api.versionsFrom("METEOR@0.9.0");
-
   api.add_files('vendor/lib/alertify.js', 'client');
   api.add_files('vendor/themes/alertify.core.css', 'client');
   api.add_files('vendor/themes/alertify.default.css', 'client');
-  api.add_files('main.js', 'client');
+  api.add_files('export.js', 'client');
 
   if (api.export){
     api.export('alertify', 'client');
   }
+});
+
+Package.on_test(function (api) {
+  api.use(['ovcharik:alertify', 'underscore', 'tinytest', 'test-helpers'], 'client');
+  api.add_files(['alertify-tests.js'], 'client');
 });
